@@ -1,7 +1,10 @@
-.navbar-default {
-    background-color: black;
-    border: none;
-    font-family: Sawasdee;
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
 }
 h1 {
     font-family: Sawasdee;
@@ -9,3 +12,10 @@ h1 {
 h3{
     font-family: Sawasdee;
 }
+
+.page-background {
+    background-color: black;
+    background-image: url("../Images/BG(Dark-50).jpg");
+}
+
+
