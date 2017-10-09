@@ -1,0 +1,22 @@
+.video-boxes{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    padding: 10%;
+    margin-right: 5%;
+    margin-left : 5%;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+.video-boxes:hover{
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.video-row {
+    margin : 5%;
+}
+body {
+    background-color: black;
+    background-image: url("../Images/BG(Dark-50).jpg");
+}
+

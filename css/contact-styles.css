@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    background-image: url("../Images/BG(Dark-50).jpg");
+}
+
+.logo-images{
+    height: 10%;
+    width: 10%;
+}
+#page-content-wrapper{
+    float: right;
+    text-align: right;
+    margin-right: 5%;
+}
+h3.list , h2.title{
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+h3.list {
+    font-size: 300%;
+}
+
+h2.title {
+    font-weight: bold;
+    font-size: 350%;
+}
