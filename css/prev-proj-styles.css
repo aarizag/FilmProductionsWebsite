@@ -1,7 +1,7 @@
 .video-boxes{
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
-    padding: 10%;
+    padding: 5%;
     margin-right: 5%;
     margin-left : 5%;
     background-color: #ffffff;
