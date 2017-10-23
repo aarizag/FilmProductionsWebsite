@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="icon" href="../Images/CSULALogo.png">
+
+    <link rel="stylesheet" href="../css/officers-styles.css">
+    <link rel="stylesheet" href="../css/DarklyBootstrap.css">
+    <link rel="stylesheet" href="../css/navbar-styles.css">
+
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div id="page-content-wrapper" >
+
+        <!--------------------------------START NAVBAR------------------------------>
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Main.html">Home</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="previous-projects.html">Previous Projects</a></li>
+                        <!--<li class="active-tab"><a href="contact.html">Contact</a></li>-->
+
+                        <li class="dropdown">
+                            <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Contact<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.facebook.com/FilmProductionsLA/">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/filmproductionsla/">Instagram</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured">YouTube</a></li>
+                                <li><a href="../Images/Snapcode%20Cropped.png">Snapchat</a></li>
+                                <li><a href="https://twitter.com/csulafp">Twitter</a></li>
+                                <li><a href="contact.html">Email</a></li>
+                            </ul>
+
+                        <li  class="active-tab dropdown">
+                            <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">Officers<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="officers.html?id=1">President</a></li>
+                                <li><a href="officers.html?id=2">Vice President</a></li>
+                                <li><a href="officers.html?id=3">Treasurer</a></li>
+                                <li><a href="officers.html?id=4">Public Relations</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!----------------------------------END NAVBAR-------------------------------------->
+
+
+        <!------------------------------------START HEADER---------------------------->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row page-header">
+                    <header style="margin-top: 3%">
+
+                        <!--<div class="col-xs-offset-6 col-xs-2">-->
+                        <!--<img src="../Images/FPC%20Camera.png" class="img-responsive">-->
+                        <!--</div>-->
+                        <div class="text-right col-4">
+                            <h1>
+                                <strong>Current Officer Board</strong><br/>
+                                <small>2017-2018</small>
+                            </h1>
+                        </div>
+
+                    </header>
+                </div>
+            </div>
+        </div>
+            <!---------------------------END HEADER--------------------------->
+
+    <script>
+        var url = window.location.href;
+        var idIndex = url.indexOf("id=") + 3;
+        var idNum = url.charAt(idIndex);
+
+        console.log(idNum, "idnum");
+        if (idNum === 1){
+            document.getElementById("page-content").innerHTML =
+                "" +
+                "";
+        }
+    </script>
+
+        <div class="container">
+            <!---------------- President -------------------->
+            <div id="president" class="disabled">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <h2>
+                            President<br/>
+                            <small>Kyle Van Beek</small>
+                        </h2>
+                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
+                        <p>
+                            This is the information for the President of the FilmProductions Club at CalstateLA
+                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
+                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
+                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
+                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
+                        </p>
+                    </div>
+                    <div class="col-xs-4" style="margin-top: 10%">
+                        <ul class="list-group">
+                            <li class="list-group-item">Email : email@example.com</li>
+                            <li class="list-group-item">Phone : (555)555-5555</li>
+                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Astrological Sign : Cthulu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------- Vice President ----------------->
+            <div id="vice-president" class="disabled">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <h2>
+                            Vice President<br/>
+                            <small>Andre Moore</small>
+                        </h2>
+                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
+                        <p>
+                            This is the information section about the Vice President of the Film Productions Club
+                        </p>
+                    </div>
+                    <div class="col-xs-4" style="margin-top: 10%">
+                        <ul class="list-group">
+                            <li class="list-group-item">Email : email@example.com</li>
+                            <li class="list-group-item">Phone : (555)555-5555</li>
+                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Astrological Sign : Cthulu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ Treasurer ------------------>
+            <div id="treasurer" class="disabled">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <h2>
+                            Treasurer<br/>
+                            <small>I Don't Remember your name :(</small>
+                        </h2>
+                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
+                        <p>
+                            This is the information section about the Treasurer of the Film Productions Club
+                        </p>
+                    </div>
+                    <div class="col-xs-4" style="margin-top: 10%">
+                        <ul class="list-group">
+                            <li class="list-group-item">Email : email@example.com</li>
+                            <li class="list-group-item">Phone : (555)555-5555</li>
+                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Astrological Sign : Cthulu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------- Public Relations ------------------------>
+            <div id="public-relations" class="disabled">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-5">
+                        <h2>
+                            Public Relations<br/>
+                            <small>Or Your Name :(</small>
+                        </h2>
+                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
+                        <p>
+                            This is the information section about the Public Relations Officer of the Film Productions Club
+                        </p>
+                    </div>
+                    <div class="col-xs-4" style="margin-top: 10%">
+                        <ul class="list-group">
+                            <li class="list-group-item">Email : email@example.com</li>
+                            <li class="list-group-item">Phone : (555)555-5555</li>
+                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Astrological Sign : Cthulu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTAINER END -->
+
+    </div>
+</div>
+</body>
+</html>

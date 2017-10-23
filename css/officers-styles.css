@@ -1,0 +1,13 @@
+.officer-pictures {
+    width: 80%;
+    height:300px;
+}
+
+body {
+    background-color: black;
+    background-image: url("../Images/BG(Dark-50).jpg");
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0;
+}
