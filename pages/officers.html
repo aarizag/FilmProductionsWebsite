@@ -17,7 +17,7 @@
 <body>
 <div id="wrapper">
 
-    <div id="page-content-wrapper" >
+    <div id="page-content-wrapper">
 
         <!--------------------------------START NAVBAR------------------------------>
         <nav class="navbar navbar-custom navbar-fixed-top">
@@ -35,16 +35,20 @@
                                 Contact<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="https://www.facebook.com/FilmProductionsLA/">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/filmproductionsla/">Instagram</a></li>
-                                <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured">YouTube</a></li>
-                                <li><a href="../Images/Snapcode%20Cropped.png">Snapchat</a></li>
-                                <li><a href="https://twitter.com/csulafp">Twitter</a></li>
-                                <li><a href="contact.html">Email</a></li>
+                                <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a>
+                                </li>
+                                <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a>
+                                </li>
+                                <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
+                                       target="_blank">YouTube</a></li>
+                                <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
+                                <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
+                                <li><a href="contact.html" target="_blank">Email</a></li>
                             </ul>
 
-                        <li  class="active-tab dropdown">
-                            <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <li class="active-tab dropdown">
+                            <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
                                aria-expanded="false">Officers<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="officers.html?id=1">President</a></li>
@@ -83,20 +87,43 @@
                 </div>
             </div>
         </div>
-            <!---------------------------END HEADER--------------------------->
+        <!---------------------------END HEADER--------------------------->
 
-    <script>
-        var url = window.location.href;
-        var idIndex = url.indexOf("id=") + 3;
-        var idNum = url.charAt(idIndex);
+        <script>
+            var url = window.location.href;
+            var idIndex = url.indexOf("id=") + 3;
+            var idNum = url.charAt(idIndex);
 
-        console.log(idNum, "idnum");
-        if (idNum === 1){
-            document.getElementById("page-content").innerHTML =
-                "" +
-                "";
-        }
-    </script>
+            console.log(idNum, "idnum");
+
+            function setPageInfo() {
+//                document.getElementById("president").className = "disabled";
+//                document.getElementById("vice-president").className = "disabled";
+//                document.getElementById("treasurer").className = "disabled";
+//                document.getElementById("public-relations").className = "disabled";
+
+                if (idNum == 1) {
+                    document.getElementById("president").className = "";
+                    console.log("presidentIDCHANGE");
+                }
+                else if (idNum == 2) {
+                    document.getElementById("vice-president").className = "";
+                }
+                else if (idNum == 3) {
+                    document.getElementById("treasurer").className = "";
+                }
+                else if (idNum == 4) {
+                    document.getElementById("public-relations").className = "";
+                }
+                else {
+                    document.getElementById("president").className = "";
+                    document.getElementById("vice-president").className = "";
+                    document.getElementById("treasurer").className = "";
+                    document.getElementById("public-relations").className = "";
+                }
+            }
+
+        </script>
 
         <div class="container">
             <!---------------- President -------------------->
@@ -185,7 +212,8 @@
                         </h2>
                         <img src="../Images/blank-profile-pic.png" class="officer-pictures">
                         <p>
-                            This is the information section about the Public Relations Officer of the Film Productions Club
+                            This is the information section about the Public Relations Officer of the Film Productions
+                            Club
                         </p>
                     </div>
                     <div class="col-xs-4" style="margin-top: 10%">
@@ -201,6 +229,9 @@
         </div>
         <!-- CONTAINER END -->
 
+        <script>
+            setPageInfo();
+        </script>
     </div>
 </div>
 </body>

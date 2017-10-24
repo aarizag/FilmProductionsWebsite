@@ -2,3 +2,6 @@ body {
     background-color: black;
     background-image: url("../Images/BG(Dark-50).jpg");
 }
+.calendar {
+    filter: invert(100%);
+}
