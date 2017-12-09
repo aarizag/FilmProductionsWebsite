@@ -17,6 +17,27 @@ body {
     background-color: black;
     background-image: url("../Images/BG(Dark-50).jpg");
 }
-
-
+.gif{
+    position: fixed;
+    left: 67px;
+    /*border-radius: 5px;*/
+    height:143px;
+    width: 290px;
+}
+.first-gif{
+    margin-top: -103px;
+}
+.second-gif{
+    margin-top: 63px;
+}
+.third-gif{
+    margin-top: 2px;
+}
+.filmstrip {
+    position: fixed;
+    left: 10px;
+    /*margin-top: -125px;*/
+    height: 100%;
+    width: 30%;
+}
 
