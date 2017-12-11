@@ -20,19 +20,11 @@ body {
 .gif{
     position: fixed;
     left: 67px;
-    /*border-radius: 5px;*/
-    height:143px;
-    width: 290px;
+    border-radius: 15px;
+    height:50%;
+    width: 30%;
 }
-.first-gif{
-    margin-top: -103px;
-}
-.second-gif{
-    margin-top: 63px;
-}
-.third-gif{
-    margin-top: 2px;
-}
+
 .filmstrip {
     position: fixed;
     left: 10px;
