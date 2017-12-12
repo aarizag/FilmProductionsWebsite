@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../css/DarklyBootstrap.css">
     <link rel="stylesheet" href="../css/navbar-styles.css">
     <link rel="stylesheet" href="../css/prev-proj-styles.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 <body class="page-background">
-<div id="wrapper" >
+<div id="wrapper">
     <!--------------------------------START NAVBAR------------------------------>
     <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container">
@@ -29,15 +30,18 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured" target="_blank">YouTube</a></li>
+                            <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a>
+                            </li>
+                            <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
+                                   target="_blank">YouTube</a></li>
                             <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
                             <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
                             <li><a href="contact.html">Email</a></li>
                         </ul>
 
-                    <li  class="dropdown">
-                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <li class="dropdown">
+                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
                            aria-expanded="false">Officers<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="officers.html?id=1">President</a></li>
@@ -55,62 +59,130 @@
     </nav>
     <!----------------------------------END NAVBAR-------------------------------------->
 
-    <!---------------------------- START PAGE CONTENT -------------------------------->
-
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
+    <!-- Active Video Changing Script -->
     <script>
-        // 2. This code loads the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
+        var url = window.location.href;
+        var idIndex = url.indexOf("id=") + 3;
+        var idNum = url.charAt(idIndex);
+        var elementID = "v"+idNum;
 
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        console.log(isNaN(idNum));
 
-        // 3. This function creates an <iframe> (and YouTube player)
-        //    after the API code downloads.
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '390',
-                width: '640',
-                videoId: 'M7lc1UVf-VE',
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                }
-            });
-        }
-
-        // 4. The API will call this function when the video player is ready.
-        function onPlayerReady(event) {
-            event.target.playVideo();
-        }
-
-        // 5. The API calls this function when the player's state changes.
-        //    The function indicates that when playing a video (state=1),
-        //    the player should play for six seconds and then stop.
-        var done = false;
-        function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.PLAYING && !done) {
-                setTimeout(stopVideo, 6000);
-                done = true;
+        function setPageInfo() {
+            if(!isNaN(idNum)) {
+                document.getElementById(elementID).setAttribute("style","visibility:visible; display:");
             }
+            else{
+                document.getElementById("v1").setAttribute("style","visibility:visible; display:");
+            }
+
         }
-        function stopVideo() {
-            player.stopVideo();
-        }
+
     </script>
 
-    <!--<div class="container">-->
-        <!--<div class="row" style="margin-top: 15%">-->
-            <!--<iframe class="center-block video-frame" width="560" height="315" src="https://www.youtube.com/embed/?listType=playlist&list=PLC76BE906C9D83A3A" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
-        <!--</div>-->
-        <!--<h3 class="description"> <b>Here is our most recent videos</b></h3>-->
-    <!--</div>-->
+    <!---------------------------- START PAGE CONTENT -------------------------------->
 
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    <!--Start Bootstrap-->
+                </a>
+            </li>
+            <!--http://img.youtube.com/vi/[video-id]/[thumbnail-number].jpg-->
+
+            <li>
+                <a href="previous-projects.html?id=1">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/VRsCSRfoUTA/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=2">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/UOFgemG9sRc/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=3">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/YyItLyjtl6U/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=4">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/7BSaRIanrjk/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=5">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/lRxhw2cjzuc/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=6">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/1TH0t6Z29HA/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=7">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/ZUUK8EM76ME/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=8">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/RNuWG6oNfWM/0.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="previous-projects.html?id=9">
+                    <img class="video-boxes" src="http://img.youtube.com/vi/zxQUY-Xq8wo/0.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid" style="margin-top: 4%">
+            <div class="well" style="padding:10px">
+                <h1 style="margin-top:0px">Previous Projects</h1>
+                <p>We are dedicated to constantly workin on new projects! All genres, all styles, all fun!</p>
+                <p>Below here you will find the most recent set of videos that we have uploaded to our YouTube channel, <a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured" target="_blank">FilmProductionsLA</a>.</p>
+                <button href="#menu-toggle" class="btn btn-default" id="menu-toggle">Recent Videos</button>
+            </div>
+
+
+            <h3 class="description"><b>Here is an example of our work!</b></h3>
+            <!--
+            <iframe id="v" class="center-block" width="560" height="315" src="https://www.youtube.com/embed/?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            -->
+            <iframe id="v1" class="center-block player" src="https://www.youtube.com/embed/VRsCSRfoUTA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v2" class="center-block player" src="https://www.youtube.com/embed/UOFgemG9sRc?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v3" class="center-block player" src="https://www.youtube.com/embed/YyItLyjtl6U?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v4" class="center-block player" src="https://www.youtube.com/embed/7BSaRIanrjk?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v5" class="center-block player" src="https://www.youtube.com/embed/lRxhw2cjzuc?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v6" class="center-block player" src="https://www.youtube.com/embed/1TH0t6Z29HA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v7" class="center-block player" src="https://www.youtube.com/embed/ZUUK8EM76ME?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v8" class="center-block player" src="https://www.youtube.com/embed/RNuWG6oNfWM?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <iframe id="v9" class="center-block player" src="https://www.youtube.com/embed/zxQUY-Xq8wo?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <script> setPageInfo(); </script>
+
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../Javascript/popper.min.js"></script>
+    <script src="../Javascript/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 
     <!---------------------------- END PAGE CONTENT -------------------------------->
+</div>
 </body>
 </html>
