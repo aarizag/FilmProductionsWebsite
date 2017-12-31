@@ -40,3 +40,10 @@ h2.title {
 .instagram{
     margin: 20px;
 }
+.instafeed {
+    position: fixed;
+    left: 67px;
+    border-radius: 15px;
+    height: 100%;
+    width: 30%;
+}

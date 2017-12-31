@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../css/DarklyBootstrap.css">
     <link rel="stylesheet" href="../css/navbar-styles.css">
     <link rel="stylesheet" href="../css/contact-styles.css">
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400, 700" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="../Javascript/instafeed.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -65,10 +66,6 @@
 <!----------------------------------END NAVBAR-------------------------------------->
 
 <div id="page-content-wrapper">
-    <h2>
-        Email:
-        <small>filmproductionsla@gmail.com</small>
-    </h2>
     <h2 class="title">
         Social Media
     </h2>
@@ -113,7 +110,7 @@
         limit: '10',
         accessToken: '1055527561.1677ed0.554b0c70d38647059ef0fbe6fbe95385',
         resolution: "standard_resolution",
-        template: '<div class="item"><a href="{{link}}"><img src="{{image}}"/></a><div class="carousel-caption">{{caption}}</div></div>',
+        template: '<div class="item"><a href="{{link}}"><img src="{{image}}"/></a><div class="carousel-caption"></div></div>',
         after: function () {
             $('#instafeed > div:nth-child(1)').addClass('active');
         }
@@ -121,23 +118,23 @@
     feed.run();
 </script>
 <hr>
-<div class="container">
-    <h2 style="Margin-left: 300px">ACM Instagram Feed</h2>
+<div class="container instafeed">
+    <h2 class="text-center"><b>Instagram Feed</b></h2>
     <img class="img-responsive center-block hidden-xs" src="../Images/insta.png" alt="Instagram Icon" height="64" width="64">
-</div>
-<div class="instagram hidden-xs">
+    <div class="instagram hidden-xs">
 
-    <div id="myCarousel" class="carousel slide"  data-ride="carousel">
-        <div class="carousel-inner" role="listbox" interval="350" id="instafeed">
+        <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+            <div class="carousel-inner" role="listbox" interval="350" id="instafeed">
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </div>
 <!---------------------- END Instagram Feed ----------------------------->
