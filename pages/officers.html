@@ -54,7 +54,7 @@
                                 <li><a href="officers.html?id=1">President</a></li>
                                 <li><a href="officers.html?id=2">Vice President</a></li>
                                 <li><a href="officers.html?id=3">Treasurer</a></li>
-                                <li><a href="officers.html?id=4">Public Relations</a></li>
+                                <li><a href="officers.html?id=4">Additional Officers</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -89,6 +89,12 @@
         </div>
         <!---------------------------END HEADER--------------------------->
 
+        <!--This block of jasvascript will do two things:
+            1) Firstly, it will determine the query string at the end of the url and determine if it is number 1-4.
+            2) If it is, it will then only the officer information associated with that id number will be displayed.
+               Else, all information blocks will be displayed.
+          -->
+
         <script>
             var url = window.location.href;
             var idIndex = url.indexOf("id=") + 3;
@@ -109,13 +115,13 @@
                     document.getElementById("treasurer").className = "";
                 }
                 else if (idNum == 4) {
-                    document.getElementById("public-relations").className = "";
+                    document.getElementById("additional-officers").className = "";
                 }
                 else {
                     document.getElementById("president").className = "";
                     document.getElementById("vice-president").className = "";
                     document.getElementById("treasurer").className = "";
-                    document.getElementById("public-relations").className = "";
+                    document.getElementById("additional-officers").className = "";
                 }
             }
 
@@ -132,18 +138,19 @@
                         </h2>
                         <img src="../Images/blank-profile-pic.png" class="officer-pictures">
                         <p>
-                            This is the information for the President of the FilmProductions Club at CalstateLA
-                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
-                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
-                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
-                            This is an Example Paragraph.This is an Example Paragraph.This is an Example Paragraph.
+                            The President of Film Productions is responsible for planning, organizing,
+                            and carrying out responsibilities associated with being the club’s chief executive officer,
+                            such as, but not limited to: appointing and delegating tasks, attending all meetings,
+                            setting goals for the club and making sure the club stays on course,
+                            solving problems within or regarding the club,
+                            and making sure each meeting is well planned and organized.
                         </p>
                     </div>
                     <div class="col-xs-4" style="margin-top: 10%">
                         <ul class="list-group">
                             <li class="list-group-item">Email : email@example.com</li>
                             <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
                             <li class="list-group-item">Astrological Sign : Cthulu</li>
                         </ul>
                     </div>
@@ -160,14 +167,17 @@
                         </h2>
                         <img src="../Images/blank-profile-pic.png" class="officer-pictures">
                         <p>
-                            This is the information section about the Vice President of the Film Productions Club
+                            The Vice-President of Film Productions fulfills the duties of the President when the President is absent or otherwise unable,
+                            or performs duties assigned by the President.
+                            This role is vital,
+                            in that the Vice-President and the President must always remain in good standing and in contact with each other.
                         </p>
                     </div>
                     <div class="col-xs-4" style="margin-top: 10%">
                         <ul class="list-group">
                             <li class="list-group-item">Email : email@example.com</li>
                             <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
                             <li class="list-group-item">Astrological Sign : Cthulu</li>
                         </ul>
                     </div>
@@ -184,40 +194,52 @@
                         </h2>
                         <img src="../Images/blank-profile-pic.png" class="officer-pictures">
                         <p>
-                            This is the information section about the Treasurer of the Film Productions Club
+                            The Treasurer establishes the organization’s budget and records any and all financial transactions.
+                            The Treasurer must generally attend all fundraiser and club events that have money involved and must consistently take inventory.
+
                         </p>
                     </div>
                     <div class="col-xs-4" style="margin-top: 10%">
                         <ul class="list-group">
                             <li class="list-group-item">Email : email@example.com</li>
                             <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
+                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
                             <li class="list-group-item">Astrological Sign : Cthulu</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!--------------------- Public Relations ------------------------>
-            <div id="public-relations" class="disabled">
+            <!--------------------- Additional officers ------------------------>
+            <div id="additional-officers" class="disabled">
                 <div class="row">
                     <div class="col-xs-offset-1 col-xs-5">
                         <h2>
-                            Public Relations<br/>
-                            <small>Or Your Name :(</small>
+                            Additional Officers<br/>
                         </h2>
                         <img src="../Images/blank-profile-pic.png" class="officer-pictures">
                         <p>
-                            This is the information section about the Public Relations Officer of the Film Productions
-                            Club
+                            Additional Executives generally assist all other Officers and help maintain productivity within the club.
+                            Responsibilities may include but are not limited to: planning fundraisers and socials,
+                            being present when other Officers are unable.
                         </p>
+
                     </div>
-                    <div class="col-xs-4" style="margin-top: 10%">
+                    <div class="col-xs-4" style="margin-top: 5%">
+                        <p>
+                            Supplementary officer positions may vary on a semester-to-semester basis depending on club needs.
+                            Officers oversee a specific club function and report to Executive Officers.
+                            Applications for each semester open at the end of the semester that precedes it.
+                            Such positions may include:<br/>
+                        </p>
                         <ul class="list-group">
-                            <li class="list-group-item">Email : email@example.com</li>
-                            <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Numer: 123 - 45 - 6789</li>
-                            <li class="list-group-item">Astrological Sign : Cthulu</li>
+                            <li class="list-group-item">Head of Writing</li>
+                            <li class="list-group-item">Head of Fundraising</li>
+                            <li class="list-group-item">Head of Socials</li>
+                            <li class="list-group-item">Head of Marketing</li>
+                            <li class="list-group-item">Head(s) of Production</li>
+                            <li class="list-group-item">Head of Equipment</li>
+                            <li class="list-group-item">Head of Production Design</li>
                         </ul>
                     </div>
                 </div>
