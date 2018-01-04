@@ -24,3 +24,26 @@ h2.title {
     font-weight: bold;
     font-size: 350%;
 }
+
+
+.carousel{
+
+    margin: 20px 0;
+
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.control-buttons{
+    text-align: center;
+}
+.instagram{
+    margin: 20px;
+}
+.instafeed {
+    position: fixed;
+    margin-left: 15%;
+    border-radius: 15px;
+    height: 100%;
+    width: 30%;
+}
