@@ -14,3 +14,10 @@ body {
     width:0;
     font-size: 0;
 }
+.primaries{
+    background-color: #ffce00;
+    color: black;
+    font-weight: bold;
+    font-size: 125%;
+    width: 50%;
+}
