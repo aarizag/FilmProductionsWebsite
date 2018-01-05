@@ -4,13 +4,17 @@ body {
 }
 
 .logo-images{
-    height: 10%;
-    width: 10%;
+    height: 75%;
+    width: 75%;
+    filter: invert(100%);
+    padding: 10%;
+    margin-top: 0;
+    align-items: center;
 }
 #page-content-wrapper{
-    float: right;
-    text-align: right;
-    margin-right: 5%;
+    float: none;
+    text-align: center;
+    margin: 5%;
 }
 h3.list , h2.title{
     margin-top: 5%;
@@ -23,6 +27,7 @@ h3.list {
 h2.title {
     font-weight: bold;
     font-size: 350%;
+    margin-bottom: 0;
 }
 
 

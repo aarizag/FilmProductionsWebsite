@@ -7,51 +7,54 @@
     <link rel="icon" href="../Images/CSULALogo.png">
 
     <link rel="stylesheet" href="../css/DarklyBootstrap.css">
-    <link rel="stylesheet" href="../css/navbar-styles.css">
-    <link rel="stylesheet" href="../css/prev-proj-styles.css">
+    <link rel="stylesheet" href="../css/global-styles.css">
+    <link rel="stylesheet" href="../css/projects-styles.css">
     <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 <body class="page-background">
 <div id="wrapper">
     <!--------------------------------START NAVBAR------------------------------>
     <nav class="navbar navbar-custom navbar-fixed-top">
-        <div class="container">
+        <div class="container ">
+            <a class="navbar-brand hidden-sm" href="http://http://www.calstatela.edu/">
+                <img alt="acm" src="../Images/CalStateLaLogo.png" class="csula-icon hidden-xs hidden-sm">
+            </a>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="Main.html">Home</a></li>
                     <li><a href="calendar.html">Calendar</a></li>
-                    <li class="active-tab"><a href="previous-projects.html">Previous Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="officers.html">Officers</a></li>
                     <!--<li class="active-tab"><a href="contact.html">Contact</a></li>-->
 
-                    <li class="dropdown">
+                    <li class="dropdown active-tab">
                         <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">
                             Contact<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="contact.html">All Media</a></li>
-                            <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a>
-                            </li>
+                            <li><a href="contact.html">Email</a></li>
+                            <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a></li>
                             <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
                                    target="_blank">YouTube</a></li>
+                            <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
                             <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
                             <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
-                            <li><a href="contact.html">Email</a></li>
                         </ul>
 
-                    <li class="dropdown">
-                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-haspopup="true"
-                           aria-expanded="false">Officers<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="officers.html">All Officers</a></li>
-                            <li><a href="officers.html?id=1">President</a></li>
-                            <li><a href="officers.html?id=2">Vice President</a></li>
-                            <li><a href="officers.html?id=3">Treasurer</a></li>
-                            <li><a href="officers.html?id=4">Additional Officers</a></li>
-                        </ul>
-                    </li>
+                        <!--<li class="dropdown">-->
+                        <!--<a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                        <!--aria-haspopup="true"-->
+                        <!--aria-expanded="false">Officers<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="officers.html">All Officers</a></li>-->
+                        <!--<li><a href="officers.html?id=1">President</a></li>-->
+                        <!--<li><a href="officers.html?id=2">Vice President</a></li>-->
+                        <!--<li><a href="officers.html?id=3">Treasurer</a></li>-->
+                        <!--<li><a href="officers.html?id=4">Additional Officers</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
                 </ul>
 
             </div>
@@ -62,6 +65,10 @@
     <!----------------------------------END NAVBAR-------------------------------------->
 
     <!-- Active Video Changing Script -->
+    <!-- All Videos are hidden except for the active video
+         by default this video has the id of 'v1'
+         The active video is determined by the query string at the end of the url.
+         -->
     <script>
         var url = window.location.href;
         var idIndex = url.indexOf("id=") + 3;
@@ -95,47 +102,47 @@
             <!--http://img.youtube.com/vi/[video-id]/[thumbnail-number].jpg-->
 
             <li>
-                <a href="previous-projects.html?id=1">
+                <a href="projects.html?id=1">
                     <img class="video-boxes" src="http://img.youtube.com/vi/VRsCSRfoUTA/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=2">
+                <a href="projects.html?id=2">
                     <img class="video-boxes" src="http://img.youtube.com/vi/UOFgemG9sRc/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=3">
+                <a href="projects.html?id=3">
                     <img class="video-boxes" src="http://img.youtube.com/vi/YyItLyjtl6U/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=4">
+                <a href="projects.html?id=4">
                     <img class="video-boxes" src="http://img.youtube.com/vi/7BSaRIanrjk/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=5">
+                <a href="projects.html?id=5">
                     <img class="video-boxes" src="http://img.youtube.com/vi/lRxhw2cjzuc/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=6">
+                <a href="projects.html?id=6">
                     <img class="video-boxes" src="http://img.youtube.com/vi/1TH0t6Z29HA/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=7">
+                <a href="projects.html?id=7">
                     <img class="video-boxes" src="http://img.youtube.com/vi/ZUUK8EM76ME/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=8">
+                <a href="projects.html?id=8">
                     <img class="video-boxes" src="http://img.youtube.com/vi/RNuWG6oNfWM/0.jpg">
                 </a>
             </li>
             <li>
-                <a href="previous-projects.html?id=9">
+                <a href="projects.html?id=9">
                     <img class="video-boxes" src="http://img.youtube.com/vi/zxQUY-Xq8wo/0.jpg">
                 </a>
             </li>
@@ -146,13 +153,8 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid" style="margin-top: 4%">
-            <div class="well" style="padding:10px">
-                <h1 style="margin-top:0px">Previous Projects</h1>
-                <p>We are dedicated to constantly workin on new projects! All genres, all styles, all fun!</p>
-                <p>Below here you will find the most recent set of videos that we have uploaded to our YouTube channel, <a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured" target="_blank">FilmProductionsLA</a>.</p>
-                <button href="#menu-toggle" class="btn btn-default" id="menu-toggle">Recent Videos</button>
-            </div>
-
+            <h1 style="margin-top:0px">Projects</h1>
+            <button href="#menu-toggle" class="btn btn-default" id="menu-toggle">Recent Videos</button>
 
             <h3 class="description"><b>Here is an example of our work!</b></h3>
             <!--

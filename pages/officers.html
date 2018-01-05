@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="../css/officers-styles.css">
     <link rel="stylesheet" href="../css/DarklyBootstrap.css">
-    <link rel="stylesheet" href="../css/navbar-styles.css">
+    <link rel="stylesheet" href="../css/global-styles.css">
 
 </head>
 
@@ -21,43 +21,46 @@
 
         <!--------------------------------START NAVBAR------------------------------>
         <nav class="navbar navbar-custom navbar-fixed-top">
-            <div class="container">
+            <div class="container ">
+                <a class="navbar-brand hidden-sm" href="http://http://www.calstatela.edu/">
+                    <img alt="acm" src="../Images/CalStateLaLogo.png" class="csula-icon hidden-xs hidden-sm">
+                </a>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="Main.html">Home</a></li>
                         <li><a href="calendar.html">Calendar</a></li>
-                        <li><a href="previous-projects.html">Previous Projects</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="officers.html">Officers</a></li>
                         <!--<li class="active-tab"><a href="contact.html">Contact</a></li>-->
 
-                        <li class="dropdown">
+                        <li class="dropdown active-tab">
                             <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">
                                 Contact<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="contact.html">All Media</a></li>
-                                <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a>
-                                </li>
+                                <li><a href="contact.html">Email</a></li>
+                                <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a></li>
                                 <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
                                        target="_blank">YouTube</a></li>
+                                <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
                                 <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
                                 <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
-                                <li><a href="contact.html">Email</a></li>
                             </ul>
 
-                        <li class="dropdown active-tab">
-                            <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true"
-                               aria-expanded="false">Officers<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="officers.html">All Officers</a></li>
-                                <li><a href="officers.html?id=1">President</a></li>
-                                <li><a href="officers.html?id=2">Vice President</a></li>
-                                <li><a href="officers.html?id=3">Treasurer</a></li>
-                                <li><a href="officers.html?id=4">Additional Officers</a></li>
-                            </ul>
-                        </li>
+                            <!--<li class="dropdown">-->
+                            <!--<a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                            <!--aria-haspopup="true"-->
+                            <!--aria-expanded="false">Officers<span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="officers.html">All Officers</a></li>-->
+                            <!--<li><a href="officers.html?id=1">President</a></li>-->
+                            <!--<li><a href="officers.html?id=2">Vice President</a></li>-->
+                            <!--<li><a href="officers.html?id=3">Treasurer</a></li>-->
+                            <!--<li><a href="officers.html?id=4">Additional Officers</a></li>-->
+                            <!--</ul>-->
+                            <!--</li>-->
                     </ul>
 
                 </div>
@@ -79,8 +82,8 @@
                         <!--</div>-->
                         <div class="text-right col-4">
                             <h1>
-                                <strong>Current Officer Board</strong><br/>
-                                <small>2017-2018</small>
+                                <strong>Officer Positions</strong><br/>
+                                <small>For a full list of our current Officer positions and their incumbents, please contact us at <a href="mailto:filmproductionsla@gmail.com?Subject=Hello%20FilmProductions">FilmProductionsLA@gmail.com</a></small>
                             </h1>
                         </div>
 
@@ -90,163 +93,7 @@
         </div>
         <!---------------------------END HEADER--------------------------->
 
-        <!--This block of jasvascript will do two things:
-            1) Firstly, it will determine the query string at the end of the url and determine if it is number 1-4.
-            2) If it is, it will then only the officer information associated with that id number will be displayed.
-               Else, all information blocks will be displayed.
-          -->
 
-        <script>
-            var url = window.location.href;
-            var idIndex = url.indexOf("id=") + 3;
-            var idNum = url.charAt(idIndex);
-
-            console.log(idNum, "idnum");
-
-            function setPageInfo() {
-
-                if (idNum == 1) {
-                    document.getElementById("president").className = "";
-                    console.log("presidentIDCHANGE");
-                }
-                else if (idNum == 2) {
-                    document.getElementById("vice-president").className = "";
-                }
-                else if (idNum == 3) {
-                    document.getElementById("treasurer").className = "";
-                }
-                else if (idNum == 4) {
-                    document.getElementById("additional-officers").className = "";
-                }
-                else {
-                    document.getElementById("president").className = "";
-                    document.getElementById("vice-president").className = "";
-                    document.getElementById("treasurer").className = "";
-                    document.getElementById("additional-officers").className = "";
-                }
-            }
-
-        </script>
-
-        <div class="container">
-            <!---------------- President -------------------->
-            <div id="president" class="disabled">
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-5">
-                        <h2>
-                            President<br/>
-                            <small>Kyle Van Beek</small>
-                        </h2>
-                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
-                        <p>
-                            The President of Film Productions is responsible for planning, organizing,
-                            and carrying out responsibilities associated with being the club’s chief executive officer,
-                            such as, but not limited to: appointing and delegating tasks, attending all meetings,
-                            setting goals for the club and making sure the club stays on course,
-                            solving problems within or regarding the club,
-                            and making sure each meeting is well planned and organized.
-                        </p>
-                    </div>
-                    <div class="col-xs-4" style="margin-top: 10%">
-                        <ul class="list-group">
-                            <li class="list-group-item">Email : email@example.com</li>
-                            <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
-                            <li class="list-group-item">Astrological Sign : Cthulu</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!---------------- Vice President ----------------->
-            <div id="vice-president" class="disabled">
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-5">
-                        <h2>
-                            Vice President<br/>
-                            <small>Andre Moore</small>
-                        </h2>
-                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
-                        <p>
-                            The Vice-President of Film Productions fulfills the duties of the President when the President is absent or otherwise unable,
-                            or performs duties assigned by the President.
-                            This role is vital,
-                            in that the Vice-President and the President must always remain in good standing and in contact with each other.
-                        </p>
-                    </div>
-                    <div class="col-xs-4" style="margin-top: 10%">
-                        <ul class="list-group">
-                            <li class="list-group-item">Email : email@example.com</li>
-                            <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
-                            <li class="list-group-item">Astrological Sign : Cthulu</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!------------------ Treasurer ------------------>
-            <div id="treasurer" class="disabled">
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-5">
-                        <h2>
-                            Treasurer<br/>
-                            <small>I Don't Remember your name :(</small>
-                        </h2>
-                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
-                        <p>
-                            The Treasurer establishes the organization’s budget and records any and all financial transactions.
-                            The Treasurer must generally attend all fundraiser and club events that have money involved and must consistently take inventory.
-
-                        </p>
-                    </div>
-                    <div class="col-xs-4" style="margin-top: 10%">
-                        <ul class="list-group">
-                            <li class="list-group-item">Email : email@example.com</li>
-                            <li class="list-group-item">Phone : (555)555-5555</li>
-                            <li class="list-group-item">Social Security Number: 123 - 45 - 6789</li>
-                            <li class="list-group-item">Astrological Sign : Cthulu</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!--------------------- Additional officers ------------------------>
-            <div id="additional-officers" class="disabled">
-                <div class="row">
-                    <div class="col-xs-offset-1 col-xs-5">
-                        <h2>
-                            Additional Officers<br/>
-                        </h2>
-                        <img src="../Images/blank-profile-pic.png" class="officer-pictures">
-                        <p>
-                            Additional Executives generally assist all other Officers and help maintain productivity within the club.
-                            Responsibilities may include but are not limited to: planning fundraisers and socials,
-                            being present when other Officers are unable.
-                        </p>
-
-                    </div>
-                    <div class="col-xs-4" style="margin-top: 5%">
-                        <p>
-                            Supplementary officer positions may vary on a semester-to-semester basis depending on club needs.
-                            Officers oversee a specific club function and report to Executive Officers.
-                            Applications for each semester open at the end of the semester that precedes it.
-                            Such positions may include:<br/>
-                        </p>
-                        <ul class="list-group">
-                            <li class="list-group-item">Head of Writing</li>
-                            <li class="list-group-item">Head of Fundraising</li>
-                            <li class="list-group-item">Head of Socials</li>
-                            <li class="list-group-item">Head of Marketing</li>
-                            <li class="list-group-item">Head(s) of Production</li>
-                            <li class="list-group-item">Head of Equipment</li>
-                            <li class="list-group-item">Head of Production Design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CONTAINER END -->
 
         <script>
             setPageInfo();
