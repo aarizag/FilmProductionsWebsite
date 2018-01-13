@@ -1,9 +1,28 @@
+@font-face {
+    font-family: slimJoe;
+    src: url('../fonts/SlimJoe.otf');
+}
+@font-face {
+    font-family: bigJohn;
+    src: url('../fonts/BIGJOHN.otf');
+}
+@font-face {
+    font-family: Verdana;
+    src: url('https://fonts.googleapis.com/css?family=Verdana');
+}
+
 a {
     color: #ffce00;
 }
 
-h1, h2, h3, h4, h5, h6, body {
-    font-family: 'Sofia';
+body {
+    font-family: 'slimJoe';
+}
+p {
+    font-family: 'Verdana';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'bigJohn';
 }
 
 body {
