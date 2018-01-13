@@ -84,6 +84,7 @@
     color: #ffce00;
     font-size: 15px;
     margin-top:5px;
+    text-align: center;
 }
 
 .vid-item:hover {
@@ -95,42 +96,37 @@
     position:relative;
     width: 100%;
 }
-
+.arrow-left, .arrow-right {
+    opacity: .5;
+}
 .arrow-left {
-    color: #fff;
+    color: #000;
     position: absolute;
-    background: #777;
-    padding: 15px;
+    background: #BBB;
+    padding: 10px;
     left: -25px;
-    top: -130px;
+    top: -125px;
     z-index: 99;
     cursor: pointer;
 }
 
 .arrow-right {
-    color: #fff;
+    color: #000;
     position: absolute;
-    background: #777;
-    padding: 15px;
+    background: #BBB;
+    padding: 10px;
     right: -25px;
-    top: -130px;
+    top: -125px;
     z-index:100;
     cursor: pointer;
 }
 
-.arrow-left:hover {
-    background: #CC181E;
+.arrow-left:hover, .arrow-right:hover {
+    opacity:1;
+    background: #ffce00;
 }
-
-.arrow-right:hover {
-    background: #CC181E;
-}
-
 
 @media (max-width: 624px) {
-    body {
-        margin: 15px;
-    }
     .caption {
         margin-top: 40px;
     }
