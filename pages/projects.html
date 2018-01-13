@@ -9,184 +9,163 @@
     <link rel="stylesheet" href="../css/DarklyBootstrap.css">
     <link rel="stylesheet" href="../css/global-styles.css">
     <link rel="stylesheet" href="../css/projects-styles.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
 </head>
-<body class="page-background">
-<div id="wrapper">
-    <!--------------------------------START NAVBAR------------------------------>
-    <nav class="navbar navbar-custom navbar-fixed-top">
-        <div class="container ">
-            <a class="navbar-brand hidden-sm" href="http://http://www.calstatela.edu/">
-                <img alt="acm" src="../Images/CalStateLaLogo.png" class="csula-icon hidden-xs hidden-sm">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Main.html">Home</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li class="active-tab"><a href="projects.html">Projects</a></li>
-                    <li><a href="officers.html">Officers</a></li>
-                    <!--<li class="active-tab"><a href="contact.html">Contact</a></li>-->
 
-                    <li class="dropdown">
-                        <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-haspopup="true" aria-expanded="false">
-                            Contact<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="contact.html">All Media</a></li>
-                            <li><a href="contact.html">Email</a></li>
-                            <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
-                                   target="_blank">YouTube</a></li>
-                            <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
-                            <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
-                            <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
-                        </ul>
+<body>
 
-                        <!--<li class="dropdown">-->
-                        <!--<a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
-                        <!--aria-haspopup="true"-->
-                        <!--aria-expanded="false">Officers<span class="caret"></span></a>-->
-                        <!--<ul class="dropdown-menu">-->
-                        <!--<li><a href="officers.html">All Officers</a></li>-->
-                        <!--<li><a href="officers.html?id=1">President</a></li>-->
-                        <!--<li><a href="officers.html?id=2">Vice President</a></li>-->
-                        <!--<li><a href="officers.html?id=3">Treasurer</a></li>-->
-                        <!--<li><a href="officers.html?id=4">Additional Officers</a></li>-->
-                        <!--</ul>-->
-                        <!--</li>-->
-                </ul>
+<!--------------------------------START NAVBAR------------------------------>
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand hidden-sm" href="http://http://www.calstatela.edu/">
+            <img alt="acm" src="../Images/CalStateLaLogo.png" class="csula-icon hidden-xs hidden-sm">
+        </a>
 
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li class="active-tab"><a href="projects.html">Projects</a></li>
+                <li><a href="officers.html">Officers</a></li>
+                <!--<li class="active-tab"><a href="contact.html">Contact</a></li>-->
+
+                <li class="dropdown">
+                    <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        Contact<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="contact.html">All Media</a></li>
+                        <li><a href="contact.html">Email</a></li>
+                        <li><a href="https://www.instagram.com/filmproductionsla/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCVNo9r8Dl361BN_h21enm-g/featured"
+                               target="_blank">YouTube</a></li>
+                        <li><a href="https://www.facebook.com/FilmProductionsLA/" target="_blank">Facebook</a></li>
+                        <li><a href="../Images/Snapcode%20Cropped.png" target="_blank">Snapchat</a></li>
+                        <li><a href="https://twitter.com/csulafp" target="_blank">Twitter</a></li>
+                    </ul>
+
+                    <!--<li class="dropdown">-->
+                    <!--<a href="officers.html" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                    <!--aria-haspopup="true"-->
+                    <!--aria-expanded="false">Officers<span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="officers.html">All Officers</a></li>-->
+                    <!--<li><a href="officers.html?id=1">President</a></li>-->
+                    <!--<li><a href="officers.html?id=2">Vice President</a></li>-->
+                    <!--<li><a href="officers.html?id=3">Treasurer</a></li>-->
+                    <!--<li><a href="officers.html?id=4">Additional Officers</a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!----------------------------------END NAVBAR-------------------------------------->
+<div class="title"><h2>Projects Playlist</h2></div>
+
+<div class="container">
+
+    <!-- THE YOUTUBE PLAYER -->
+    <div class="vid-container">
+
+        <iframe id="vid_frame" src="https://www.youtube.com/embed/YyItLyjtl6U?rel=0&showinfo=0&autohide=1" frameborder="1" width="560" height="315"></iframe>
+    </div>
+
+    <!-- THE PLAYLIST -->
+    <div class="vid-list-container">
+        <div class="vid-list">
+            <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/InsertVideoIdHere?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
+                <!--<div class="thumb"><img src="http://img.youtube.com/vi/InsertVideoIdHere/0.jpg"></div>-->
+                <!--<div class="desc"></div>-->
+            <!--</div>-->
+
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VRsCSRfoUTA?rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="https://img.youtube.com/vi/VRsCSRfoUTA/0.jpg"></div>
+                <div class="desc">Two Dudes go to a Party</div>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!----------------------------------END NAVBAR-------------------------------------->
 
-    <!-- Active Video Changing Script -->
-    <!-- All Videos are hidden except for the active video
-         by default this video has the id of 'v1'
-         The active video is determined by the query string at the end of the url.
-         -->
-    <script>
-        var url = window.location.href;
-        var idIndex = url.indexOf("id=") + 3;
-        var idNum = url.charAt(idIndex);
-        var elementID = "v"+idNum;
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/UOFgemG9sRc?rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/UOFgemG9sRc/0.jpg"></div>
+                <div class="desc">iPredict</div>
+            </div>
 
-        console.log(isNaN(idNum));
-
-        function setPageInfo() {
-            if(!isNaN(idNum)) {
-                document.getElementById(elementID).setAttribute("style","visibility:visible; display:");
-            }
-            else{
-                document.getElementById("v1").setAttribute("style","visibility:visible; display:");
-            }
-
-        }
-
-    </script>
-
-    <!---------------------------- START PAGE CONTENT -------------------------------->
-
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#">
-                    <!--Start Bootstrap-->
-                </a>
-            </li>
-            <!--http://img.youtube.com/vi/[video-id]/[thumbnail-number].jpg-->
-
-            <li>
-                <a href="projects.html?id=1">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/VRsCSRfoUTA/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=2">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/UOFgemG9sRc/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=3">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/YyItLyjtl6U/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=4">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/7BSaRIanrjk/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=5">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/lRxhw2cjzuc/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=6">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/1TH0t6Z29HA/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=7">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/ZUUK8EM76ME/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=8">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/RNuWG6oNfWM/0.jpg">
-                </a>
-            </li>
-            <li>
-                <a href="projects.html?id=9">
-                    <img class="video-boxes" src="http://img.youtube.com/vi/zxQUY-Xq8wo/0.jpg">
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid" style="margin-top: 4%">
-            <h1 style="margin-top:0px">Projects</h1>
-            <button href="#menu-toggle" class="btn btn-default" id="menu-toggle">Recent Videos</button>
-
-            <h3 class="description"><b>Here is an example of our work!</b></h3>
-            <!--
-            <iframe id="v" class="center-block" width="560" height="315" src="https://www.youtube.com/embed/?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            -->
-            <iframe id="v1" class="center-block player" src="https://www.youtube.com/embed/VRsCSRfoUTA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v2" class="center-block player" src="https://www.youtube.com/embed/UOFgemG9sRc?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v3" class="center-block player" src="https://www.youtube.com/embed/YyItLyjtl6U?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v4" class="center-block player" src="https://www.youtube.com/embed/7BSaRIanrjk?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v5" class="center-block player" src="https://www.youtube.com/embed/lRxhw2cjzuc?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v6" class="center-block player" src="https://www.youtube.com/embed/1TH0t6Z29HA?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v7" class="center-block player" src="https://www.youtube.com/embed/ZUUK8EM76ME?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v8" class="center-block player" src="https://www.youtube.com/embed/RNuWG6oNfWM?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
-            <iframe id="v9" class="center-block player" src="https://www.youtube.com/embed/zxQUY-Xq8wo?rel=0" gesture="media" allow="encrypted-media" allowfullscreen style="display:none"></iframe>
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/7BSaRIanrjk?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/7BSaRIanrjk/0.jpg"></div>
+                <div class="desc">The Night of Them</div>
+            </div>
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/lRxhw2cjzuc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/lRxhw2cjzuc/0.jpg"></div>
+                <div class="desc">God Complex</div>
+            </div>
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/1TH0t6Z29HA?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/1TH0t6Z29HA/0.jpg"></div>
+                <div class="desc">A Brush With Love</div>
+            </div>
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/ZUUK8EM76ME?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/ZUUK8EM76ME/0.jpg"></div>
+                <div class="desc">The Drug</div>
+            </div>
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/RNuWG6oNfWM?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                <div class="thumb"><img src="http://img.youtube.com/vi/RNuWG6oNfWM/0.jpg"></div>
+                <div class="desc">Sockpacolypse</div>
+            </div>
         </div>
     </div>
-    <!-- /#page-content-wrapper -->
-    <script> setPageInfo(); </script>
 
-    <script src="../jquery/jquery.min.js"></script>
-    <script src="../Javascript/popper.min.js"></script>
-    <script src="../Javascript/bootstrap.min.js"></script>
+    <!-- LEFT AND RIGHT ARROWS -->
+    <div class="arrows">
+        <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+        <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
 
-    <!-- Menu Toggle Script -->
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
+</div>
+
+<!-- JS FOR SCROLLING THE ROW OF THUMBNAILS -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
         });
-    </script>
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+</script>
 
-    <!---------------------------- END PAGE CONTENT -------------------------------->
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19095819-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+
+<!---------------------------- END PAGE CONTENT -------------------------------->
 </div>
 </body>
 </html>

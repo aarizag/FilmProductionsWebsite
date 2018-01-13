@@ -6,15 +6,6 @@ div.transbox {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 
 }
-
-h1 {
-    font-family: Sawasdee;
-}
-
-h3 {
-    font-family: Sawasdee;
-}
-
 body {
     background-color: black;
     background-image: url("../Images/BG(Dark-50).jpg");
